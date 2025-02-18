@@ -1,6 +1,6 @@
 const todos = ["Do laundry", "Eat lunch", "Read a book"];
 
-function getTodos() {
+async function getTodos() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       todos.forEach((val) => {
@@ -11,7 +11,7 @@ function getTodos() {
   });
 }
 
-function createATodo(todo) {
+async function createATodo(todo) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       todos.push(todo);
