@@ -10,8 +10,8 @@ function createATodo(todo, cb) {
   setTimeout(() => {
     todos.push(todo);
     cb();
-  });
+  }, 4000);
 }
 
-// getTodos();
+getTodos();
 createATodo("Watch Netflix", getTodos);
